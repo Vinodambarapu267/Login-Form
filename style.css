@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.form {
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.4);
+    width: 50vh;
+    height: auto;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(156, 72, 234);
+    font-weight: 500;
+}
+
+button {
+    text-align: center;
+    background-color: rgb(156, 72, 234);
+    height: 3em;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+button:hover {
+    color: rgb(156, 72, 234);
+    background-color: transparent;
+    border: 1px solid rgb(200, 196, 196);
+}
+
+.inputs>input {
+    border-radius: 5px;
+    background-color: rgb(238, 235, 235);
+    height: 2em;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin: 10px auto;
+    gap: 15px;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.remember {
+    display: block;
+}
+
+.remember input {
+
+    accent-color: red;
+}
+
+input:focus {
+    border: none;
+}
+
+.end {
+    text-align: center;
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+}
