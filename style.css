@@ -4,7 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+#spans {
+    color: green;
+    ;
+    font-size: 12px;
+    margin: 0;
 }
 
 body {
@@ -13,10 +20,12 @@ body {
     align-items: center;
     height: 100vh;
     background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 23px;
 }
 
 .form {
     background-color: whitesmoke;
+    /* background: blur(30%); */
     box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.4);
     width: 50vh;
     height: auto;
@@ -39,6 +48,7 @@ button {
     width: 100%;
     border-radius: 10px;
     border: none;
+    margin-top: 5px;
     font-weight: 500;
 }
 
@@ -46,6 +56,10 @@ button:hover {
     color: rgb(156, 72, 234);
     background-color: transparent;
     border: 1px solid rgb(200, 196, 196);
+}
+
+#passinput {
+    margin-bottom: 0;
 }
 
 .inputs>input {
@@ -65,17 +79,18 @@ button:hover {
     margin: 15px auto;
 }
 
-.remember {
+/* .remember {
     display: block;
-}
+} */
 
 .remember input {
 
-    accent-color: red;
+    accent-color: rgb(156, 72, 234);
 }
 
-input:focus {
+.inputs>input:active {
     border: none;
+
 }
 
 .end {

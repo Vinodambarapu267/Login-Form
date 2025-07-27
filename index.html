@@ -4,36 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="">
-    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="./assets/icons8-login-64.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form class="form" action="">
+    <div id="form" class="form">
         <div>
             <h1>Login</h1>
             <div class="inputs">
                 <label for="mail">Email</label><br>
                 <input type="email" placeholder="you@example.com" name="" id="mail" required>
             </div>
-            <div class="inputs">
+            <div class="inputs" id="passinput">
                 <label for="password">Password</label><br>
-                <input type="password" placeholder="*******" name="" id="" required>
+                <input type="password" placeholder="•••••••••••" name="" id="password" required>
             </div>
             <div class="forget">
-                <div class="remember"><input id="check" type="checkbox">
-                    <span>remember me </span>
+                <div class="remember">
+                    <label>
+                        <input type="checkbox" name="" id="check"> Remember me</label>
                 </div>
-                <span style="color: rgb(156, 72, 234);">Forget password?</span>
+                <span style="color: rgb(156, 72, 234);"><a href="forgetpassword.html">Forget password?</a></span>
             </div>
 
-            <button>Log In</button>
+            <button onclick="submit()">Log In</button>
+
             <div class="end">
                 <p>Don't have an account?<a href="">Sign up</a></p>
             </div>
         </div>
-    </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
